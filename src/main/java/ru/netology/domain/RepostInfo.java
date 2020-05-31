@@ -5,6 +5,7 @@ public class RepostInfo {
     private boolean userPageRepost;
 
 
+
     public int getQuantityReposts() {
         return quantityReposts;
     }
