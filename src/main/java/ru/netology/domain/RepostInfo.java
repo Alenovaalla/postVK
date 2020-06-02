@@ -1,24 +1,23 @@
 package ru.netology.domain;
 
 public class RepostInfo {
-    private int quantityReposts;
-    private boolean userPageRepost;
+    private boolean reposted;
+    private int userPageIdRepost;
 
 
-
-    public int getQuantityReposts() {
-        return quantityReposts;
+    public boolean isReposted() {
+        return reposted;
     }
 
-    public void setQuantityReposts(int quantityReposts) {
-        this.quantityReposts = quantityReposts;
+    public void setReposted(boolean reposted) {
+        this.reposted = reposted;
     }
 
-    public boolean isUserPageRepost() {
-        return userPageRepost;
+    public int getUserPageIdRepost() {
+        return userPageIdRepost;
     }
 
-    public void setUserPageRepost(boolean userPageRepost) {
-        this.userPageRepost = userPageRepost;
+    public void setUserPageIdRepost(int userPageIdRepost) {
+        this.userPageIdRepost = userPageIdRepost;
     }
 }

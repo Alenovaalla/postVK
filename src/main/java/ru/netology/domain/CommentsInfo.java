@@ -1,58 +1,32 @@
 package ru.netology.domain;
 
 public class CommentsInfo {
-    private int quantityComments;
-    private boolean canCommentsUserPage;
-    private boolean onComments;
-    private boolean canPost;
-    private boolean canClose;
-    private boolean canOpen;
+    private int AutorId;
+    private int quantityLikes;
+    private boolean onlyFrendsCanLikes;
 
-    public int getQuantityComments() {
-        return quantityComments;
+
+    public int getAutorId() {
+        return AutorId;
     }
 
-    public void setQuantityComments(int quantityComments) {
-        this.quantityComments = quantityComments;
+    public void setAutorId(int autorId) {
+        AutorId = autorId;
     }
 
-    public boolean isCanCommentsUserPage() {
-        return canCommentsUserPage;
+    public int getQuantityLikes() {
+        return quantityLikes;
     }
 
-    public void setCanCommentsUserPage(boolean canCommentsUserPage) {
-        this.canCommentsUserPage = canCommentsUserPage;
+    public void setQuantityLikes(int quantityLikes) {
+        this.quantityLikes = quantityLikes;
     }
 
-    public boolean isOnComments() {
-        return onComments;
+    public boolean isOnlyFrendsCanLikes() {
+        return onlyFrendsCanLikes;
     }
 
-    public void setOnComments(boolean onComments) {
-        this.onComments = onComments;
-    }
-
-    public boolean isCanPost() {
-        return canPost;
-    }
-
-    public void setCanPost(boolean canPost) {
-        this.canPost = canPost;
-    }
-
-    public boolean isCanClose() {
-        return canClose;
-    }
-
-    public void setCanClose(boolean canClose) {
-        this.canClose = canClose;
-    }
-
-    public boolean isCanOpen() {
-        return canOpen;
-    }
-
-    public void setCanOpen(boolean canOpen) {
-        this.canOpen = canOpen;
+    public void setOnlyFrendsCanLikes(boolean onlyFrendsCanLikes) {
+        this.onlyFrendsCanLikes = onlyFrendsCanLikes;
     }
 }

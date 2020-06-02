@@ -1,40 +1,31 @@
 package ru.netology.domain;
 
 public class LikeInfo {
-private int quantityLikes;
-private int userPageLikes;
-private boolean canLike;
-private boolean canPublish;
+    private int AutorId;
+    private boolean onlyFrendsCanLikes;
+    private boolean liked;
 
-    public boolean isCanLike() {
-        return canLike;
+    public int getAutorId() {
+        return AutorId;
     }
 
-    public void setCanLike(boolean canLike) {
-        this.canLike = canLike;
+    public void setAutorId(int autorId) {
+        AutorId = autorId;
     }
 
-    public boolean isCanPublish() {
-        return canPublish;
+    public boolean isOnlyFrendsCanLikes() {
+        return onlyFrendsCanLikes;
     }
 
-    public void setCanPublish(boolean canPublish) {
-        this.canPublish = canPublish;
+    public void setOnlyFrendsCanLikes(boolean onlyFrendsCanLikes) {
+        this.onlyFrendsCanLikes = onlyFrendsCanLikes;
     }
 
-    public int getQuantityLikes() {
-        return quantityLikes;
+    public boolean isLiked() {
+        return liked;
     }
 
-    public void setQuantityLikes(int quantityLikes) {
-        this.quantityLikes = quantityLikes;
-    }
-
-    public int getUserPageLikes() {
-        return userPageLikes;
-    }
-
-    public void setUserPageLikes(int userPageLikes) {
-        this.userPageLikes = userPageLikes;
+    public void setLiked(boolean liked) {
+        this.liked = liked;
     }
 }

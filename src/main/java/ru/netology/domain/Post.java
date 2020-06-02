@@ -1,32 +1,140 @@
 package ru.netology.domain;
 
 public class Post {
-    private int ID;
-    private int userPageID;
-    private int autorPostID;
+    private int id;
+    private int userPageId;
+    private int autorPostId;
     private String text;
     private int data;
     private CommentsInfo commentsInfo;
-    private int repostUserPageID;
-    private boolean Private;
+    private int repostUserPageId;
+    private boolean frendsOnly;
     private LikeInfo likeInfo;
     private RepostInfo repostInfo;
     private int viewsInfo;
+    private int createdById;
+    private int ReplyOwnerId;
+    private String copyright;
+    private String postType;
+    private Geo geo;
+    private int signerId;
+    private boolean canPin;
+    private boolean canDelete;
+    private boolean canEdit;
+    private boolean isPinned;
+    private boolean markedAsAds;
+    private boolean isFavorite;
+    private int postponedId;
+    private int quantityComments;
+    private boolean canCommentsUserPage;
+    private boolean onComments;
+    private int quantityLikes;
+    private int userPageLikes;
+    private boolean canLike;
+    private int quantityReposts;
 
-    public int getCreatedByID() {
-        return createdByID;
+    public int getId() {
+        return id;
     }
 
-    public void setCreatedByID(int createdByID) {
-        this.createdByID = createdByID;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public int getReplyOwnerID() {
-        return ReplyOwnerID;
+    public int getUserPageId() {
+        return userPageId;
     }
 
-    public void setReplyOwnerID(int replyOwnerID) {
-        ReplyOwnerID = replyOwnerID;
+    public void setUserPageId(int userPageId) {
+        this.userPageId = userPageId;
+    }
+
+    public int getAutorPostId() {
+        return autorPostId;
+    }
+
+    public void setAutorPostId(int autorPostId) {
+        this.autorPostId = autorPostId;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public int getData() {
+        return data;
+    }
+
+    public void setData(int data) {
+        this.data = data;
+    }
+
+    public CommentsInfo getCommentsInfo() {
+        return commentsInfo;
+    }
+
+    public void setCommentsInfo(CommentsInfo commentsInfo) {
+        this.commentsInfo = commentsInfo;
+    }
+
+    public int getRepostUserPageId() {
+        return repostUserPageId;
+    }
+
+    public void setRepostUserPageId(int repostUserPageId) {
+        this.repostUserPageId = repostUserPageId;
+    }
+
+    public boolean isFrendsOnly() {
+        return frendsOnly;
+    }
+
+    public void setFrendsOnly(boolean frendsOnly) {
+        this.frendsOnly = frendsOnly;
+    }
+
+    public LikeInfo getLikeInfo() {
+        return likeInfo;
+    }
+
+    public void setLikeInfo(LikeInfo likeInfo) {
+        this.likeInfo = likeInfo;
+    }
+
+    public RepostInfo getRepostInfo() {
+        return repostInfo;
+    }
+
+    public void setRepostInfo(RepostInfo repostInfo) {
+        this.repostInfo = repostInfo;
+    }
+
+    public int getViewsInfo() {
+        return viewsInfo;
+    }
+
+    public void setViewsInfo(int viewsInfo) {
+        this.viewsInfo = viewsInfo;
+    }
+
+    public int getCreatedById() {
+        return createdById;
+    }
+
+    public void setCreatedById(int createdById) {
+        this.createdById = createdById;
+    }
+
+    public int getReplyOwnerId() {
+        return ReplyOwnerId;
+    }
+
+    public void setReplyOwnerId(int replyOwnerId) {
+        ReplyOwnerId = replyOwnerId;
     }
 
     public String getCopyright() {
@@ -53,12 +161,12 @@ public class Post {
         this.geo = geo;
     }
 
-    public int getSignerID() {
-        return signerID;
+    public int getSignerId() {
+        return signerId;
     }
 
-    public void setSignerID(int signerID) {
-        this.signerID = signerID;
+    public void setSignerId(int signerId) {
+        this.signerId = signerId;
     }
 
     public boolean isCanPin() {
@@ -109,113 +217,70 @@ public class Post {
         isFavorite = favorite;
     }
 
-    public int getPostponedID() {
-        return postponedID;
+    public int getPostponedId() {
+        return postponedId;
     }
 
-    public void setPostponedID(int postponedID) {
-        this.postponedID = postponedID;
+    public void setPostponedId(int postponedId) {
+        this.postponedId = postponedId;
     }
 
-    private int createdByID;
-    private int ReplyOwnerID;
-    private String copyright;
-    private String postType;
-    private Geo geo;
-    private int signerID;
-    private boolean canPin;
-    private boolean canDelete;
-    private boolean canEdit;
-    private boolean isPinned;
-    private boolean markedAsAds;
-    private boolean isFavorite;
-    private int postponedID;
-
-    public int getID() {
-        return ID;
+    public int getQuantityComments() {
+        return quantityComments;
     }
 
-    public void setID(int ID) {
-        this.ID = ID;
+    public void setQuantityComments(int quantityComments) {
+        this.quantityComments = quantityComments;
     }
 
-    public int getUserPageID() {
-        return userPageID;
+    public boolean isCanCommentsUserPage() {
+        return canCommentsUserPage;
     }
 
-    public void setUserPageID(int userPageID) {
-        this.userPageID = userPageID;
+    public void setCanCommentsUserPage(boolean canCommentsUserPage) {
+        this.canCommentsUserPage = canCommentsUserPage;
     }
 
-    public int getAutorPostID() {
-        return autorPostID;
+    public boolean isOnComments() {
+        return onComments;
     }
 
-    public void setAutorPostID(int autorPostID) {
-        this.autorPostID = autorPostID;
+    public void setOnComments(boolean onComments) {
+        this.onComments = onComments;
     }
 
-    public String getText() {
-        return text;
+    public int getQuantityLikes() {
+        return quantityLikes;
     }
 
-    public void setText(String text) {
-        this.text = text;
+    public void setQuantityLikes(int quantityLikes) {
+        this.quantityLikes = quantityLikes;
     }
 
-    public int getData() {
-        return data;
+    public int getUserPageLikes() {
+        return userPageLikes;
     }
 
-    public void setData(int data) {
-        this.data = data;
+    public void setUserPageLikes(int userPageLikes) {
+        this.userPageLikes = userPageLikes;
     }
 
-    public CommentsInfo getCommentsInfo() {
-        return commentsInfo;
+    public boolean isCanLike() {
+        return canLike;
     }
 
-    public void setCommentsInfo(CommentsInfo commentsInfo) {
-        this.commentsInfo = commentsInfo;
+    public void setCanLike(boolean canLike) {
+        this.canLike = canLike;
     }
 
-    public int getRepostUserPageID() {
-        return repostUserPageID;
+    public int getQuantityReposts() {
+        return quantityReposts;
     }
 
-    public void setRepostUserPageID(int repostUserPageID) {
-        this.repostUserPageID = repostUserPageID;
-    }
-
-    public boolean isPrivate() {
-        return Private;
-    }
-
-    public void setPrivate(boolean aPrivate) {
-        Private = aPrivate;
-    }
-
-    public LikeInfo getLikeInfo() {
-        return likeInfo;
-    }
-
-    public void setLikeInfo(LikeInfo likeInfo) {
-        this.likeInfo = likeInfo;
-    }
-
-    public RepostInfo getRepostInfo() {
-        return repostInfo;
-    }
-
-    public void setRepostInfo(RepostInfo repostInfo) {
-        this.repostInfo = repostInfo;
-    }
-
-    public int getViewsInfo() {
-        return viewsInfo;
-    }
-
-    public void setViewsInfo(int viewsInfo) {
-        this.viewsInfo = viewsInfo;
+    public void setQuantityReposts(int quantityReposts) {
+        this.quantityReposts = quantityReposts;
     }
 }
+
+
+
