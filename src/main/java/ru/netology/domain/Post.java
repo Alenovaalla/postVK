@@ -3,7 +3,6 @@ package ru.netology.domain;
 public class Post {
     private int id;
     private int userPageId;
-    private int autorPostId;
     private String text;
     private int data;
     private CommentsInfo commentsInfo;
@@ -12,26 +11,22 @@ public class Post {
     private LikeInfo likeInfo;
     private RepostInfo repostInfo;
     private int viewsInfo;
-    private int createdById;
-    private int ReplyOwnerId;
     private String copyright;
     private String postType;
     private Geo geo;
-    private int signerId;
     private boolean canPin;
     private boolean canDelete;
     private boolean canEdit;
     private boolean isPinned;
     private boolean markedAsAds;
     private boolean isFavorite;
-    private int postponedId;
     private int quantityComments;
     private boolean canCommentsUserPage;
     private boolean onComments;
     private int quantityLikes;
-    private int userPageLikes;
     private boolean canLike;
     private int quantityReposts;
+
 
     public int getId() {
         return id;
@@ -47,14 +42,6 @@ public class Post {
 
     public void setUserPageId(int userPageId) {
         this.userPageId = userPageId;
-    }
-
-    public int getAutorPostId() {
-        return autorPostId;
-    }
-
-    public void setAutorPostId(int autorPostId) {
-        this.autorPostId = autorPostId;
     }
 
     public String getText() {
@@ -121,22 +108,6 @@ public class Post {
         this.viewsInfo = viewsInfo;
     }
 
-    public int getCreatedById() {
-        return createdById;
-    }
-
-    public void setCreatedById(int createdById) {
-        this.createdById = createdById;
-    }
-
-    public int getReplyOwnerId() {
-        return ReplyOwnerId;
-    }
-
-    public void setReplyOwnerId(int replyOwnerId) {
-        ReplyOwnerId = replyOwnerId;
-    }
-
     public String getCopyright() {
         return copyright;
     }
@@ -159,14 +130,6 @@ public class Post {
 
     public void setGeo(Geo geo) {
         this.geo = geo;
-    }
-
-    public int getSignerId() {
-        return signerId;
-    }
-
-    public void setSignerId(int signerId) {
-        this.signerId = signerId;
     }
 
     public boolean isCanPin() {
@@ -217,14 +180,6 @@ public class Post {
         isFavorite = favorite;
     }
 
-    public int getPostponedId() {
-        return postponedId;
-    }
-
-    public void setPostponedId(int postponedId) {
-        this.postponedId = postponedId;
-    }
-
     public int getQuantityComments() {
         return quantityComments;
     }
@@ -255,14 +210,6 @@ public class Post {
 
     public void setQuantityLikes(int quantityLikes) {
         this.quantityLikes = quantityLikes;
-    }
-
-    public int getUserPageLikes() {
-        return userPageLikes;
-    }
-
-    public void setUserPageLikes(int userPageLikes) {
-        this.userPageLikes = userPageLikes;
     }
 
     public boolean isCanLike() {

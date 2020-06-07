@@ -1,17 +1,17 @@
 package ru.netology.domain;
 
 public class CommentsInfo {
-    private int AutorId;
+    private int UserId;
     private int quantityLikes;
-    private boolean onlyFrendsCanLikes;
+    private boolean viewOnlyForFriends;
 
 
-    public int getAutorId() {
-        return AutorId;
+    public int getUserId() {
+        return UserId;
     }
 
-    public void setAutorId(int autorId) {
-        AutorId = autorId;
+    public void setUserId(int userId) {
+        UserId = userId;
     }
 
     public int getQuantityLikes() {
@@ -22,11 +22,11 @@ public class CommentsInfo {
         this.quantityLikes = quantityLikes;
     }
 
-    public boolean isOnlyFrendsCanLikes() {
-        return onlyFrendsCanLikes;
+    public boolean isViewOnlyForFriends() {
+        return viewOnlyForFriends;
     }
 
-    public void setOnlyFrendsCanLikes(boolean onlyFrendsCanLikes) {
-        this.onlyFrendsCanLikes = onlyFrendsCanLikes;
+    public void setViewOnlyForFriends(boolean viewOnlyForFriends) {
+        this.viewOnlyForFriends = viewOnlyForFriends;
     }
 }
